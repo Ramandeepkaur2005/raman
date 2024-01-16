@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning the element in CSS</title>
+    <!-- position: static(default) ,absolute, relative, fixed, sticky -->
+    <style>
+        #container{
+            box-sizing: border-box;
+            border: 3px solid green;
+            width: 10000px;
+            height: 1000px;
+            background-color: rgb(156, 189, 153);
+        }
+        .box{
+            background-color: rgba(236, 49, 193, 0.748);
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            top: 2px;
+        }
+        #box1{
+            position: sticky;
+            top: 7px;
+        }
+        #box2{
+            position: absolute;
+            top: 250px;
+            left: 170px;
+        }
+        #box3{
+            position: relative;
+            top: 20px;
+            left: 190px;
+        }
+        #box4{
+            position: fixed;
+            right: 6px;
+            bottom: 16px;
+        }      
+          #chat{   
+            border-radius: 20px;        }
+        #chat:hover{
+            height: 50px;
+            width: 400px;
+            background-color: rgb(15, 15, 14);
+            color: black;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box" id="box1"> <p>This Box 1 shows the example of strictly keys used in CSS elements.</p></div>
+             <div class="box" id="box2"><p>The Box 2 shows the example of absolute position used in CSS.</p></div>
+             <div class="box" id="box3"><p>The Box 3 shows the example of relative position used in CSS.</p></div>
+             <div class="chatbox" id="box4">
+                <input type="text" name="chat" id="chat" placeholder="chat Now">
+             </div>
+        </div>
+    </body>
